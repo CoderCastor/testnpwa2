@@ -24,7 +24,7 @@ const About = () => {
     return () => clearInterval(interval);
   }, [isDragging]);
 
-  const handleDragEnd = (_event: any, info: { offset: { x: number } }) => {
+  const handleDragEnd = (_event: MouseEvent | TouchEvent, info: { offset: { x: number } }) => {
     const dragOffset = info.offset.x;
     if (dragOffset < -50) {
       // Dragged left → Next Image

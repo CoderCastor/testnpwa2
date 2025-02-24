@@ -39,7 +39,7 @@ export default function AdminLogin() {
         router.push("/");
       }, 1500);
     } catch (err) {
-      console.log(err)
+      console.log(err);
       setError("Invalid username or password");
     } finally {
       setLoading(false);
@@ -188,7 +188,7 @@ export default function AdminLogin() {
 
               <div className="mt-6 text-center">
                 <div className="text-sm">
-                  Don't have an account?{" "}
+                  Don&apos;t have an account?{" "}
                   <Link
                     href="/user/register"
                     className="font-medium text-blue-600 hover:text-blue-500"

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, MutableRefObject } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
 import { IoArrowBackOutline } from "react-icons/io5";
 import Link from "next/link";

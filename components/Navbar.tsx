@@ -5,14 +5,12 @@ import { motion } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import logo from "../public/npwa-logo.png";
 import FeedbackButton from "./FeedbackButton";
 
 const sections = ["About", "Events", "Membership", "FAQs", "Contact"];
 
 const Navbar = () => {
-  const router = useRouter();
   const [activeSection, setActiveSection] = useState("");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isCommitteeOpen, setIsCommitteeOpen] = useState(false);
@@ -185,6 +183,7 @@ const Navbar = () => {
     </nav>
     
   );
+  setIsMobileLoginOpen(false)
 };
 
 export default Navbar;
