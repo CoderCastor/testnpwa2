@@ -14,7 +14,7 @@ export default function FeedbackButton() {
         Give Feedback
       </button>
 
-      <FeedbackForm isOpen={isFeedbackOpen} onClose={() => setIsFeedbackOpen(false)} />
+      <FeedbackForm />
     </>
   );
 }
